@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ip Detective</title>
+		<!--css-->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a class="header__title" href="#">IP Detective</a>
+		</header>
+		<main>
+			<section class="hero-container">
+				<h1 class="hero-title">
+					Tu Herramienta para Rastrear y Analizar Direcciones IP
+				</h1>
+				<p class="hero-text">
+					¿Necesitas información detallada sobre una IP en particular? ¡Estás en
+					el lugar correcto! Nuestra herramienta te permite descubrir todo lo
+					que necesitas saber sobre una dirección IP específica.
+				</p>
+			</section>
+
+			<div class="app-container">
+				<form action="" class="form" id="form">
+					<div class="input-container">
+						<label for="ip-input">Ingresa una ip:</label>
+						<input
+							placeholder="Ingresa aquí la ip"
+							class="form__input"
+							type="text"
+							id="ip-input"
+						/>
+						<small>Example: 186.46.30.26</small>
+					</div>
+
+					<button id="submit" class="form__submit">Submit</button>
+				</form>
+
+				<pre id="results" class="pre">tus resultados se mostrarán aquí</pre>
+			</div>
+		</main>
+
+		<!--javascript-->
+		<script src="main.js"></script>
+	</body>
+</html>
