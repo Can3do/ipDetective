@@ -12,7 +12,7 @@ body {
 }
 
 main {
-	padding: 4rem 1rem;
+	padding: 5vh 1rem;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -23,7 +23,7 @@ main {
 
 .hero-container {
 	display: flex;
-	flex-flow: column;
+	flex-direction: column;
 	max-width: 40rem;
 }
 
@@ -39,6 +39,7 @@ main {
 }
 
 .app-container {
+	max-width: 40rem;
 	display: flex;
 	flex-direction: column;
 }
@@ -46,15 +47,14 @@ main {
 .form {
 	display: flex;
 	flex-direction: column;
-	width: min(100%, 40rem);
-	box-sizing: border-box;
-	row-gap: 1rem;
-	align-items: center;
+	align-items: flex-start;
+	gap: 1rem;
 }
 
 .input-container {
 	display: flex;
-	flex-flow: column;
+	flex-direction: column;
+	gap: 0.5rem;
 }
 
 .input-container label {
@@ -91,11 +91,13 @@ main {
 	background-color: #3f3e3f;
 	padding: 0.5rem;
 	color: #fff;
-	width: 100%;
+	width: min(100%, 50rem);
 	box-sizing: border-box;
-	overflow-x: scroll;
+	overflow-x: auto;
 	min-height: 5rem;
 	margin: 2rem 0 0;
+	border-radius: 1rem;
+	white-space: pre-wrap;
 }
 .header {
 	display: flex;
@@ -120,6 +122,6 @@ main {
 
 @media screen and (min-width: 1200px) {
 	main {
-		grid-template-columns: 1fr 1fr;
+		flex-direction: row;
 	}
 }
